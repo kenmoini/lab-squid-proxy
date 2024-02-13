@@ -106,8 +106,10 @@ data:
     #access_log /var/log/squid/access.log
     logfile_rotate 0
     access_log stdio:/dev/stdout
-    cache_log /var/log/squid/cache.log
-    cache_store_log /var/log/squid/cache_store.log
+    #cache_log /var/log/squid/cache.log
+    cache_log stdio:/dev/stdout
+    #cache_store_log /var/log/squid/cache_store.log
+    cache_store_log stdio:/dev/stdout
 
   40_local-cache.conf: |
     # Uncomment and adjust the following to add a disk cache directory.
