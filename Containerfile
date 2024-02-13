@@ -19,4 +19,6 @@ RUN update-ca-trust
 EXPOSE 3128
 EXPOSE 3129
 
+USER squid
+
 CMD /start.sh
