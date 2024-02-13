@@ -16,12 +16,12 @@ COPY container_root/ /
 
 RUN update-ca-trust
 
-RUN mkdir -p /var/run/squid \
-    && chown squid:squid /var/run/squid
+#RUN mkdir -p /var/run/squid \
+#    && chown squid:squid /var/run/squid
 
 EXPOSE 3128
 EXPOSE 3129
 
-USER squid
+#USER squid
 
 CMD /start.sh
