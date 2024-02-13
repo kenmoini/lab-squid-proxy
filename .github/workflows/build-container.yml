@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - Containerfile
+      - container_root/**
       - .github/workflows/build-container.yml
 
   # Schedule workflow run at 00:00 on Sunday

@@ -16,4 +16,4 @@ fi
 
 /usr/sbin/squid -k parse -f ${SQUID_CONF}
 
-/usr/sbin/squid --foreground $SQUID_OPTS -f ${SQUID_CONF}
+/usr/sbin/squid -d1 --foreground $SQUID_OPTS -f ${SQUID_CONF}
