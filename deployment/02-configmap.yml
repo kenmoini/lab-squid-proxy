@@ -7,6 +7,8 @@ metadata:
   labels:
     app: squid-proxy
 data:
+  00_general.conf: |
+    pid_filename /var/run/squid/squid.pid
   00_acls.conf: |
     # Example rule allowing access from your local networks.
     # Adapt to list your (internal) IP networks from where browsing
