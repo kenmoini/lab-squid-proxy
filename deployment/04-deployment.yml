@@ -43,8 +43,8 @@ spec:
             #- name: squid-db
             #  mountPath: /etc/squid/certs
             #  mountPath: /etc/squid/db
-            - name: squid-logs
-              mountPath: /var/log/squid
+            #- name: squid-logs
+            #  mountPath: /var/log/squid
             - name: squid-cache
               mountPath: /var/cache/squid
       volumes:
@@ -56,8 +56,8 @@ spec:
             secretName: squid-certs
         #- name: squid-db
         #  emptyDir: {}
-        - name: squid-logs
-          emptyDir: {}
+        #- name: squid-logs
+        #  emptyDir: {}
         - name: squid-cache
           persistentVolumeClaim:
             claimName: squid-cache

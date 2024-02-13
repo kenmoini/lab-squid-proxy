@@ -102,13 +102,14 @@ data:
   30_logging.conf: |
     logformat squid-cs %{%Y-%m-%d %H:%M:%S}tl %3tr %>a %Ss/%03>Hs %<st %rm %>ru %un %Sh/%<a %mt "%{User-Agent}>h" "SQUID-CS" %>st %note
 
-    # logfile_rotate 3
+    #logfile_rotate 3
     #access_log /var/log/squid/access.log
+    #cache_log /var/log/squid/cache.log
+    #cache_store_log /var/log/squid/cache_store.log
+
     logfile_rotate 0
     access_log stdio:/dev/stdout
-    #cache_log /var/log/squid/cache.log
     cache_log stdio:/dev/stdout
-    #cache_store_log /var/log/squid/cache_store.log
     cache_store_log stdio:/dev/stdout
 
   40_local-cache.conf: |
