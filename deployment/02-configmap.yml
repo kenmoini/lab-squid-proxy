@@ -76,7 +76,7 @@ data:
 
     # Misc general configuration
     visible_hostname proxy.kemo.labs
-    dns_v4_first on
+    #dns_v4_first on
     forwarded_for on
 
   20_ssl-mitm.conf: |
