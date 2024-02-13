@@ -4,7 +4,8 @@
 # podman push quay.io/kenmoini/squid-proxy:latest
 # podman push quay.io/kenmoini/squid-proxy:$(date +'%F')
 
-FROM registry.access.redhat.com/ubi8/ubi:8.8-1067.1698056881
+#FROM registry.access.redhat.com/ubi8/ubi:8.8-1067.1698056881
+FROM quay.io/centos/centos:stream9
 
 RUN dnf update -y \
  && dnf install -y squid openssl \
