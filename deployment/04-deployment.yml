@@ -28,7 +28,7 @@ spec:
             requests:
               cpu: 100m
               memory: 256Mi
-          image: quay.io/kenmoini/squid-proxy:848a71c
+          image: quay.io/kenmoini/squid-proxy:171d848
           ports:
             - containerPort: 3128
             - containerPort: 3129
