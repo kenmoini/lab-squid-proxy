@@ -24,7 +24,7 @@ jobs:
     steps:
 
     - name: Check out code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       #with:
       #  token: ${{ secrets.GH_PAT }} # `GH_PAT` is a secret that contains your PAT
 
