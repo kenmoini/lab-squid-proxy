@@ -19,8 +19,21 @@ RUN update-ca-trust
 #RUN mkdir -p /var/run/squid \
 #    && chown squid:squid /var/run/squid
 
+###### HTTPS MitM
+# HTTP PROXY
 EXPOSE 3128
+# Intercept/DNAT
+EXPOSE 3228
+# TPROXY
+EXPOSE 3328
+
+###### No MitM
+# HTTP PROXY
 EXPOSE 3129
+# Intercept/DNAT
+EXPOSE 3229
+# TPROXY
+EXPOSE 3329
 
 #USER squid
 
