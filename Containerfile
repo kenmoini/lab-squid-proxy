@@ -8,7 +8,7 @@
 FROM quay.io/centos/centos:stream9
 
 RUN dnf update -y \
- && dnf install -y squid openssl \
+ && dnf install -y squid openssl conntrack-tools \
  && dnf clean all \
  && rm -rf /var/cache/yum
 
